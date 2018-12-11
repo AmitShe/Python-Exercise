@@ -52,10 +52,6 @@ for i in range(latest_email_id,first_email_id, -1):
                     print 'From : ' + email_from + '\n'
                     print 'Subject : ' + email_subject + '\n'
 
-
-
-
-
 book = xlrd.open_workbook(filename)  
 sheetToRead = book.sheet_by_index(0)
 
