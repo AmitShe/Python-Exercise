@@ -1,4 +1,5 @@
-# run: python q2.py "Junior Exercise - Report.xlsx"
+# run: python PythomExercise.py [yourGmail@gmail.com] [Gmail password]
+
 import xlrd
 import datetime
 import sys
@@ -14,8 +15,7 @@ mail = imaplib.IMAP4_SSL(SMTP_SERVER)
 mail.login(FROM_EMAIL,FROM_PWD) # user + password
 mail.select('inbox')
 
-#type, data = mail.search(None, '(FROM "notifications@singular.comeet-notifications.com" SUBJECT "Singular - Home Exercise")')
-type, data = mail.search(None, '(FROM "amit.sh@outlook.com" SUBJECT "fileTesting")')
+type, data = mail.search(None, '(FROM "testing@outlook.com" SUBJECT "fileTesting")')
 
 mail_ids = data[0]
 id_list = mail_ids.split()
