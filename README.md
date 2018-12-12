@@ -12,7 +12,7 @@ downloads an Excel report simulates a report from a Gmail account and to do on i
 
 	
 To run the script:
-python PythonExercise.py [yourGmail@gmail.com] [Gmail password]
+`python PythonExercise.py [yourGmail@gmail.com] [Gmail password]`
 
 you need to change in the script only line 18:
 testing@outlook.com = the mail address you receive the file from
